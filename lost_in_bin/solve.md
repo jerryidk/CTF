@@ -4,8 +4,7 @@
 Do the typical stuff, feed into decompiler. You will find something like this
 
 
-<code> 
-
+```
 int main(int argc, char** argv)
 {
 
@@ -33,19 +32,13 @@ int main(int argc, char** argv)
   return 0;
 }
 
-</code>
+```
 
-
-<code>
-  ptrace(0,0,0,0) == -1 
-</code>
-
-gdb will run ptrace on program upon start, thus ptrace call will fail in the user program causing branch to be taken differently. ( A neat trick ).
-
+This line<code> ptrace(0,0,0,0) == -1 </code> will cause gdb run incorrectly. Gdb will run ptrace on program upon start, thus ptrace call will fail in the user program causing branch to be taken differently.
 
 To get the flag, solve following system
 
-<code>
+```
     -24w - 18x - 15y - 12z = -18393
     18w + 18x + 9y - 9z = 4419
     16w + 12x + 4y + 2z = 7300
@@ -55,6 +48,6 @@ To get the flag, solve following system
     x = 115
     y = 317
     z = 510
-</code>
+```
 
 finally, you can obtain the flag by input the above 4 numbers as command line argument.
