@@ -1,0 +1,3 @@
+Look in the script to see how to solve using brute force. 
+
+You can use any RE framework ot get the code ( hard to run the application  as it is on aarch63/android ).
